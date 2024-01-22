@@ -62,7 +62,7 @@ module AmzSpApi::TokensApiModel
       end
 
       if attributes.key?(:'restricted_resources')
-        if (value = attributes[:'restricted_resources']).is_a?(Array)
+        if (value = attributes[:'restricted_resources']).present?
           self.restricted_resources = value
         end
       end
